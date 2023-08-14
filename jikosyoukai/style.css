@@ -45,11 +45,58 @@ h4 {
 	font-family: DotGothic16;
 	font-size: 40px;
 }
-img {
+.image1 {
   width: 400px;
   height: auto;
   position: absolute; 
   bottom: 90px; 
   right: 200px; 
 }
+.favorite {
+	border: 1px solid #fff;
+	font-family: DotGothic16;
+	font-size: 100px;
+	border-spacing: 80px;
+	margin: 0 auto;
+	
+}
+.favorite img {
+	width: 200px;
+	height: auto;
+}
+.link {
+	display: flex;
+	justify-content: center;
+}
+.link a {
+  font-family: DotGothic16;
+  font-size: 50px;
+  margin-right: 20px;  
+}
 
+.link a:hover {
+	text-decoration: underline;
+        font-size: 60px;
+}
+
+h6 {
+	font-family: DotGothic16;
+	font-size: 100px;
+	text-align: center;
+}
+.image2 {
+	width: 800px;
+        height: auto;
+        margin: 0 auto;
+	display: block;
+}
+.image3 {
+	width: 70px;
+        height: auto;
+        position: absolute;
+        top: 87px;
+        right: 145px;
+  }
+
+    
+  
