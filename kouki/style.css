@@ -1,1 +1,114 @@
 @charset "UTF-8";
+
+html, body {
+	font-family: sans-serif;
+}
+
+h2{
+	background: #8b4513;
+	color: #fff;
+}
+
+.image {
+	text-align: center;
+ }
+
+.image2 {
+	width: 180%;
+}
+
+.image3 {
+	width: 150%;
+}
+
+.float-box {
+       float: left;
+       margin-right: 22em;
+       margin-bottom: 1em;
+       vertical-align: baseline;
+}
+
+.float-clear {
+	overflow: hidden;
+}
+
+th, td {
+	font-size: 25px;
+}
+
+form {
+  width: 50%;
+  margin: 10% auto;
+  min-width: 9rem;
+}
+
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+
+  &[type=submit] {
+    background: $green;
+    color: #fff;
+    width: auto;
+    float: right;
+  }
+
+  &::placeholder {
+    color: darken(#f9f9f9, 50%);
+  }
+
+  &.error {
+    background: $red;
+    color: #fff;
+    &::placeholder {
+      color: darken($red, 60%);
+    }
+  }
+}
+textarea {
+  height: 10rem;
+}
+.captcha {
+  float:left;
+  input {
+    float: right;
+  }
+  input[name=question] {
+    width: 4rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    padding-right: 0;
+  }
+  [name=captcha] {
+    width: 5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0.5rem;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+// Generic Styles ;)
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
